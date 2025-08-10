@@ -362,4 +362,87 @@
       }
     }
 
+    /* Estilos vistosos para los enlaces de redes */
+.redes a {
+  display: inline-block;
+  padding: 10px 18px;
+  border-radius: 6px;
+  background-color: #5b21b6; /* Morado principal */
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.redes a:hover {
+  background-color: #7c3aed; /* Morado más claro */
+  transform: translateY(-2px);
+}
+
+.redes a:nth-child(1) {
+  background-color: #333; /* GitHub */
+}
+.redes a:nth-child(1):hover {
+  background-color: #555;
+}
+
+.redes a:nth-child(2) {
+  background-color: #0a66c2; /* LinkedIn */
+}
+.redes a:nth-child(2):hover {
+  background-color: #004182;
+}
+
+.redes a:nth-child(3) {
+  background-color: #fa5c5c; /* Itch.io */
+}
+.redes a:nth-child(3):hover {
+  background-color: #d94a4a;
+}
+
+footer {
+  background-color: #111;
+  color: white;
+  text-align: center;
+  padding: 30px 20px;
+  margin-top: 30px;
+}
+
+footer p {
+  margin: 0 0 15px 0;
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+
+.footer-social {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.footer-social a {
+  display: inline-block;
+  padding: 10px 16px;
+  border-radius: 25px;
+  background-color: #333;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.footer-social a:hover {
+  transform: translateY(-2px);
+}
+
+/* Colores por red */
+.footer-social a:nth-child(1) { background-color: #333; }       /* GitHub */
+.footer-social a:nth-child(1):hover { background-color: #555; }
+
+.footer-social a:nth-child(2) { background-color: #0a66c2; }   /* LinkedIn */
+.footer-social a:nth-child(2):hover { background-color: #004182; }
+
+.footer-social a:nth-child(3) { background-color: #fa5c5c; }   /* Itch.io */
+.footer-social a:nth-child(3):hover { background-color: #d94a4a; }
+
     

@@ -33,15 +33,20 @@ document.addEventListener('DOMContentLoaded', () => {
     lastScrollY = currentScroll;
   });
 
-  function toggleMenu() {
-    navLinks.classList.toggle('show');
-  }
 
-  function changeLang(lang) {
-    if (lang === 'es') {
-      window.location.href = 'index.html';
-    } else if (lang === 'en') {
-      window.location.href = 'index-en.html';
-    }
-  }
+  document.querySelector('.menu-toggle').addEventListener('click', () => {
+    navLinks.classList.toggle('show');
+  });
+
+  document.querySelectorAll('.lang-switcher button').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const lang = btn.dataset.lang;
+      if (lang === 'es') {
+        window.location.href = 'index.html';
+      } else if (lang === 'en') {
+        window.location.href = 'index-en.html';
+      }
+    });
+  });
 });
+
