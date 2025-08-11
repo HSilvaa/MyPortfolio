@@ -1,87 +1,86 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-      <link rel="stylesheet" href="styles.css" />
-      <script src="script.js" defer></script>
-  <title>Mi Portafolio</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="script.js" defer></script>
+  <title>My Portfolio</title>
 </head>
 <body>
 
 <header id="main-header">
-  <h1 id="logo">MYPORTFOLIO</h1>
-  <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+  <h1 id="logo">My Portfolio</h1>
+  <button class="menu-toggle">☰</button>
   <nav>
     <ul id="nav-links">
-      <li><a href="#sobre-mi">Sobre Mí</a></li>
-      <li><a href="#habilidades">Habilidades</a></li>
-      <li><a href="#experiencia">Experiencia</a></li>
-      <li><a href="#proyectos">Proyectos</a></li>
-      <li><a href="#contacto">Contacto</a></li>
+      <li><a href="#sobre-mi">About Me</a></li>
+      <li><a href="#habilidades">Skills</a></li>
+      <li><a href="#experiencia">Experience</a></li>
+      <li><a href="#proyectos">Projects</a></li>
+      <li><a href="#contacto">Contact</a></li>
+      <li class="lang-switcher">
+        <button data-lang="es">ES</button>
+        <button data-lang="en">EN</button>
+      </li>
     </ul>
   </nav>
-
-<div class="lang-switcher">
-  <button data-lang="es">ES</button>
-  <button data-lang="en">EN</button>
-</div>
 </header>
 
 <section id="sobre-mi">
-  <h2 data-i18n="about_me">Sobre Mí</h2>
+  <h2 data-i18n="about_me">About Me</h2>
   <div class="about-container">
     <div class="about-text">
-      <p data-i18n="about_text">Soy un graduado en Diseño y Desarrollo de Videjuegos interesado en el mundo de la programación, especialmente en IA y backend. A pesar de mis estudios y mi pasión por los videojuegos, tengo un perfil técnico centrado en la programación en Java con una arquitectura de microservicios.</p>
-      <a href="CV_Spanish-Hugo Silva Gil.pdf" download class="boton-cv" data-i18n="download_cv">Descargar CV</a>
+      <p data-i18n="about_text">I am a graduate in Game Design and Development interested in the world of programming, especially AI and backend. Despite my studies and passion for video games, I have a technical profile focused on Java programming with a microservices architecture.</p>
+      <a href="CV_English-Hugo Silva Gil.pdf" download class="boton-cv" data-i18n="download_cv">Download CV</a>
     </div>
-    <img src="05110359-42a1-43ff-94b1-8dea66a11206.png" alt="Sobre mí" class="about-image" />
+    <img src="FotoHugoChikita.png" alt="About me" class="about-image" />
   </div>
 </section>
 
 <section id="habilidades">
-  <h2>Habilidades Técnicas</h2>
+  <h2>Technical Skills</h2>
   <ul>
-    <li><b>Lenguajes de programación:</b> Angular, Java, C#, Python y conocimientos en JavaScript, HTML y Css</li>
-    <li><b>Bases de datos:</b> SQL, Mongo, y ORMs como Hibernate</li>
-    <li><b>Otros:</b> Metodologías Ágiles y control de versiones con GitHub</li>
+    <li><b>Programming languages:</b> Angular, Java, C#, Python and knowledge in JavaScript, HTML and CSS</li>
+    <li><b>Databases:</b> SQL, Mongo, and ORMs such as Hibernate</li>
+    <li><b>Others:</b> Agile methodologies and version control with Git</li>
   </ul>
 </section>
 
 <section id="experiencia">
-  <h2>Experiencia / Educación</h2>
+  <h2>Experience / Education</h2>
   <ul>
-    <li>Bootcamp FullStack Java y Microservicios | Hiberus | Junio 2025 - Actualidad</li>
-    <li>Desarrollo Web + IA | Infoser | Febrero 2025 - Junio 2025</li>
-    <li>Grado en Diseño y Desarrollo de Videjuegos | Universidad Rey Juan Carlos | 2021 - 2025</li>
+    <li><b>FullStack Java and Microservices Bootcamp</b> | Hiberus | June 2025 - Present</li>
+    <li><b>Web Development + AI</b> | Infoser | February 2025 - June 2025</li>
+    <li><b>Bachelor's Degree in Game Design and Development</b> | Rey Juan Carlos University | 2021 - 2025</li>
   </ul>
 </section>
 
 <section id="proyectos">
-  <h2>Proyectos</h2>
+  <h2>Projects</h2>
   <div class="grid-proyectos">
     <div class="proyecto color1">
-      <img src="https://via.placeholder.com/500x300?text=Proyecto+1" class="imagen-proyecto" />
-      <h3>Proyecto 1</h3>
-      <p>Descripción del proyecto 1</p>
+      <img src="https://via.placeholder.com/500x300?text=Project+1" class="imagen-proyecto" />
+      <h3>Project 1</h3>
+      <p>Project 1 description</p>
       <div class="iconos-enlaces">
         <a href="#">🔗</a>
         <a href="#">🌐</a>
       </div>
     </div>
     <div class="proyecto color2">
-      <img src="https://via.placeholder.com/500x300?text=Proyecto+2" class="imagen-proyecto" />
-      <h3>Proyecto 2</h3>
-      <p>Descripción del proyecto 2</p>
+      <img src="https://via.placeholder.com/500x300?text=Project+2" class="imagen-proyecto" />
+      <h3>Project 2</h3>
+      <p>Project 2 description</p>
       <div class="iconos-enlaces">
         <a href="#">🔗</a>
         <a href="#">🌐</a>
       </div>
     </div>
     <div class="proyecto color3">
-      <img src="https://via.placeholder.com/500x300?text=Proyecto+3" class="imagen-proyecto" />
-      <h3>Proyecto 3</h3>
-      <p>Descripción del proyecto 3</p>
+      <img src="https://via.placeholder.com/500x300?text=Project+3" class="imagen-proyecto" />
+      <h3>Project 3</h3>
+      <p>Project 3 description</p>
       <div class="iconos-enlaces">
         <a href="#">🔗</a>
         <a href="#">🌐</a>
@@ -91,42 +90,48 @@
 </section>
 
 <section id="contacto">
-  <h2>Contáctame</h2>
-  <p>¿Te gustaría trabajar conmigo? Puedes escribirme o seguirme en redes:</p>
+  <h2>Contact Me</h2>
+  <p>Would you like to work with me? You can write to me or follow me on social media:</p>
   <p>Email: <a href="mailto:hugo_jobs@outlook.com">hugo_jobs@outlook.com</a></p>
   
   <div class="redes" style="margin-top: 20px; display: flex; justify-content: center; gap: 15px;">
-    <a href="https://github.com/TU-USUARIO" target="_blank" rel="noopener noreferrer">GitHub</a>
+    <a href="https://github.com/HSilvaa?tab=repositories" target="_blank" rel="noopener noreferrer">GitHub</a>
     <a href="https://www.linkedin.com/in/hugosilvagil" target="_blank" rel="noopener noreferrer">LinkedIn</a>
     <a href="https://itch.io/dashboard" target="_blank" rel="noopener noreferrer">Itch.io</a>
   </div>
 </section>
 
 <section class="message-section">
-  <h2>¡Envíame un mensaje!</h2>
-  <p>¿Tienes una pregunta, propuesta o solo quieres saludar? ¡Adelante!</p>
-  <form id="contactForm" class="form-contacto" action="https://formsubmit.co/hugo.parla@hotmail.com" method="POST">
+  <h2>Send Me a Message!</h2>
+  <p>Have a question, proposal, or just want to say hi? Go ahead!</p>
+  <form id="contactForm" class="form-contacto" action="https://formsubmit.co/hugo_jobs@outlook.com" method="POST">
     <div class="form-row">
       <div class="form-group">
-        <label>Tu Nombre</label>
-        <input type="text" id="nameInput" name="name" required placeholder="Introduce tu nombre" />
+        <label>Your Name</label>
+        <input type="text" id="nameInput" name="name" required placeholder="Enter your name" />
       </div>
       <div class="form-group">
-        <label>Dirección Email</label>
-        <input type="email" name="email" required placeholder="Introduce tu email" />
+        <label>Email Address</label>
+        <input type="email" name="email" required placeholder="Enter your email" />
       </div>
     </div>
     <div class="form-group">
-      <label>Tu Mensaje</label>
-      <textarea name="message" rows="4" required placeholder="Escribe aquí..."></textarea>
+      <label>Your Message</label>
+      <textarea name="message" rows="4" required placeholder="Write here..."></textarea>
     </div>
-    <input type="hidden" name="_next" value="http://127.0.0.1:5500/thanks.html" />
-    <button type="submit">SHOOT →</button>
+    <input type="hidden" name="_next" value="https://hsilvaa.github.io/MyPortfolio/thanks.html" />
+    <button type="submit">Send →</button>
   </form>
 </section>
 
 <footer>
   <p>© 2025 Hugo Silva</p>
+  <div class="footer-social">
+    <a href="https://github.com/HSilvaa?tab=repositories" target="_blank" rel="noopener noreferrer">GitHub</a>
+    <a href="https://www.linkedin.com/in/hugosilvagil" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+    <a href="https://itch.io/dashboard" target="_blank" rel="noopener noreferrer">Itch.io</a>
+  </div>
 </footer>
+
 </body>
 </html>
